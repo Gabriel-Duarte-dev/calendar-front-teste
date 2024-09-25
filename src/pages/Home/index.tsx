@@ -40,8 +40,8 @@ export function Home() {
       endDateTime: "2024-09-24T22:00",
     };
 
-    const response = await api.post("/calendar/creat-event", body);
-    console.log(response);
+    const { data } = await api.post("/calendar/creat-event", body);
+    console.log(data);
   }
 
   return (
